@@ -571,7 +571,7 @@ package com.codecatalyst.promise
 		 * 
 		 * @param error Error to be thrown.
 		 */
-		private static function scheduleRethrowError( error:* ):void
+		public static function scheduleRethrowError( error:* ):void
 		{
 			nextTick( rethrowError, [ error ] );
 		}
