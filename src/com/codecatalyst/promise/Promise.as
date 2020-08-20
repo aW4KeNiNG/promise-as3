@@ -583,14 +583,7 @@ package com.codecatalyst.promise
 		 */
 		private static function rethrowError( error:* ):void
 		{
-			if ( error is Error )
-			{
-				throw error.getStackTrace() + "\nRethrown from:";
-			}
-			else
-			{
-				throw error;
-			}
+            throw error;
 		}
 		
 		// ========================================
